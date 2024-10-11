@@ -58,10 +58,10 @@ form.addEventListener("submit", (event) => {
   console.log(`Alter: ${currentYear - yearOfBirth.value}`);
 
   // Variabeln in messageContent einfügen
-  messageContent.textContent = `Hallo :wave::skin-tone-6:, du bist ${userName.value},
+  messageContent.textContent = `Hallo, du bist ${userName.value},
   du kommst aus ${country.value}, du bist ${
     currentYear - yearOfBirth.value
   } alt.
 
-  :people_hugging: Herzlich Wilkommen!`;
+   Herzlich Wilkommen!`;
 });
