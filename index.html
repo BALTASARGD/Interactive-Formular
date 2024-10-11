@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Greeting Message App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="main-content">
+        <section class="form-section">
+            <h1 class="form-section__title">Welcome!</h1>
+            <form class="form-section__form" id="user-form">
+                <div class="form-section__field">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-section__field">
+                    <label for="country">Country:</label>
+                    <input type="text" id="country" name="country" required>
+                </div>
+                <div class="form-section__field">
+                    <label for="year">Year of Birth:</label>
+                    <input type="number" id="year" name="year" required>
+                </div>
+                <button type="submit" class="form-section__submit-button">Submit</button>
+            </form>
+        </section>
+
+        <section class="message-section">
+            <h2 class="message-section__title">Hello!</h2>
+            <p class="message-section__content" id="message-content">
+                Please complete and submit the form to receive a personalized greeting.
+            </p>
+        </section>
+    </main>
+
+
+</body>
+
+</html>

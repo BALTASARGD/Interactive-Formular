@@ -1,0 +1,114 @@
+/* CSS Variables for Dynamic Colors */
+:root {
+    --primary-color: #4caf50; /* Green */
+    --secondary-color: #ffffff; /* White */
+    --background-color: #f0f0f0; /* Light Gray */
+    --text-color: #333333; /* Dark Gray */
+    --section-background: #ffffff; /* White */
+  }
+  
+  /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+  }
+  
+  /* Form Section */
+  .form-section {
+    flex: 1 1 300px;
+    padding: 20px;
+    background-color: var(--section-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    border-radius: 10px; /* Apply border radius */
+    margin: 10px;
+  }
+  
+  .form-section__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .form-section__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .form-section__field {
+    margin-bottom: 15px;
+  }
+  
+  .form-section__field label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-section__field input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .form-section__submit-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    align-self: center; /* Center the button */
+    margin-top: 10px;
+  }
+  
+  /* Message Section */
+  .message-section {
+    flex: 1 1 300px;
+    padding: 20px;
+    background-color: var(--section-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    border-radius: 10px; /* Apply border radius */
+    margin: 10px;
+  }
+  
+  .message-section__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .message-section__content {
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .main-content {
+      flex-direction: column;
+    }
+  
+    .form-section,
+    .message-section {
+      margin: 10px auto; /* Center sections on mobile */
+    }
+  }
